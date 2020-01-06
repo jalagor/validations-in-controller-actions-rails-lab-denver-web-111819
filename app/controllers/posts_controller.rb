@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post!, only: [:show, :edit, :update]
 
   def show
-    @post = post.find(params[:id])
+    @post = Post.find(params[:id])
     render json: @post
   end
 
