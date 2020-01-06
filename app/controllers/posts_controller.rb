@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def show
     post = post.find(params[:id])
+    render json: post
   end
 
   def edit
